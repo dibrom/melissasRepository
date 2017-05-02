@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:background="@color/colorAccent">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ZentrierterText"
+        android:textColor="@color/darkgrey2"
+        tools:text="Um dich mit deinen passenden Fitness-Zwillingen
+lokal zusammenzubringen benötigen wir deinen Standort.
+
+Keine Sorge, wir wollen dir gar nicht metergenau folgen.
+Wir brauchen nur deine Sportbase,
+den Ort Deines sportlichen Mittelpunkts.
+
+Erlaube jetzt auf deinen Standort zugreifen zu dürfen.
+So kannst Du jederzeit und überall spontan schauen, wer
+(über deren Sportbase) und was in deiner
+unmittelbaren Umgebung verfügbar ist.
+
+Dich findet man nur über deine Sportbase,
+nicht über deinen aktuellen Standort."
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEINE SPORTBASE"
+        android:textColor="@color/darkgrey2"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:checked="false"
+        android:thumbTint="@color/colorPrimary"
+        android:trackTint="@color/colorPrimary"
+        tools:checked="true" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lightcyan"
+        android:button="@android:drawable/radiobutton_off_background"
+        android:buttonTint="@color/lightcyan"
+        app:buttonTint="@color/lightcyan"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignStart="@+id/switch1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="17dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lightcyan"
+        android:button="@android:drawable/radiobutton_off_background"
+        android:buttonTint="@color/lightcyan"
+        app:buttonTint="@color/white"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignStart="@+id/switch1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="17dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lightcyan"
+        android:button="@android:drawable/radiobutton_off_background"
+        android:buttonTint="@color/lightcyan"
+        app:buttonTint="@color/lightcyan"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignStart="@+id/switch1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginBottom="17dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lightcyan"
+        android:button="@android:drawable/radiobutton_off_background"
+        android:buttonTint="@color/lightcyan"
+        app:buttonTint="@color/lightcyan"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignStart="@+id/switch1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="-30dp"
+        android:layout_marginBottom="17dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lightcyan"
+        android:button="@android:drawable/radiobutton_off_background"
+        android:buttonTint="@color/lightcyan"
+        app:buttonTint="@color/lightcyan"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignStart="@+id/switch1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="-70dp"
+        android:layout_marginBottom="17dp" />
+
+</RelativeLayout>

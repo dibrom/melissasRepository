@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mpisk.aos_fz.startPage">
+
+    <Button
+        android:text="SIGN UP"
+        android:id="@+id/signup"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="36dp"
+        android:background="@color/colorPrimary"
+        android:alpha="0.7"
+        android:elevation="0dp"
+        android:textColor="@color/darkgrey2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/login"
+        android:layout_toEndOf="@+id/login"
+        android:onClick="goToSignUp"/>
+
+    <Button
+        android:text="LOGIN"
+        android:id="@+id/login"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/darkgrey2"
+        android:alpha="0.7"
+        android:elevation="0dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/signup"
+        android:onClick="goToLogin"/>
+
+
+    <!--was macht das tools? es wird dann in der app nicht der richgtige text angezeigt-->
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:text="Fitness-Zwilling"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        tools:text="Fitness-Zwilling" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="Make exercising social again."
+        tools:text="Make exercising social again." />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Finde deine zu dir passenden Fitness-Zwillinge und Fitnessangebote ganz in deiner Nähe."
+        tools:text="Finde deine zu dir passenden Fitness-Zwillinge und Fitnessangebote ganz in deiner Nähe."
+        android:layout_above="@+id/signup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="28dp" />
+
+</RelativeLayout>

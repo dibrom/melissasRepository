@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mpisk.aos_fz.loginPage">
+
+    <!--mit Facebook registrieren-->
+    <Button
+        android:id="@+id/Facebook"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/round_button"
+        android:text="Mit Facebook registrieren"
+        android:textColor="@color/darkgrey2"
+        android:layout_above="@+id/GooglePlus"
+        android:layout_alignLeft="@+id/checkedTextView"
+        android:layout_alignStart="@+id/checkedTextView" />
+
+    <!--mit GooglePlus registrieren-->
+    <Button
+        android:id="@+id/GooglePlus"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/Facebook"
+        android:layout_alignStart="@+id/Facebook"
+        android:layout_centerVertical="true"
+        android:background="@drawable/round_button"
+        android:text="Mit Google+ registrieren"
+        android:textColor="@color/darkgrey2"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:text="ODER"
+        android:textColor="@color/darkgrey2"
+        android:layout_below="@+id/GooglePlus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="LOGIN page"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        tools:text="Dein Name" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView2"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:text="CheckedTextView"
+        tools:text="Deine Email"
+        android:layout_alignTop="@+id/checkedTextView"
+        android:layout_alignLeft="@+id/checkedTextView"
+        android:layout_alignStart="@+id/checkedTextView" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/checkedTextView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        tools:text="Mit der Registrierung stimmst du den AGB und DATENSCHUTZERKLÄRUNG zu." />
+
+</RelativeLayout>
